@@ -1,0 +1,21 @@
+.icon-box {
+    text-align: center;
+
+    &__icon {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        margin-bottom: $grid-base * 2.5;
+    }
+
+    &__heading h3 {
+        font-size: 5px;
+    }
+
+    &__text {
+        font-size: 13px;
+        margin-top: $grid-base * 2;
+        margin-left: $grid-base * 1.5;
+        margin-right: $grid-base * 1.5;
+    }
+}

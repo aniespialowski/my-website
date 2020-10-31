@@ -1,0 +1,115 @@
+/* Style dla section-hero*/
+#section_hero {
+  display:flex;
+ }
+@media screen {
+  #section_hero {
+    background-image:url(../images/klawiatura.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    background-color: $background-first-page;
+    height:100vh;
+    color:$white;
+  }
+  #section_hero::before {
+    content:'';
+    position:absolute;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    background-color: $background-first-page-before;
+    mix-blend-mode: multiply;
+  }
+}
+@media screen {
+  #section_hero .wrapper {
+    &--section_hero {
+      z-index:1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      align-content:center;
+      flex-wrap:wrap; 
+    }
+  }
+}
+#section_hero .section_hero_image {
+  width:180px;
+  border-radius:50%;
+  box-shadow:1px 1px 6px 1px $background-first-page-before;
+}
+@media screen {
+  #section_hero .section_hero_image{
+    border:2px solid $border;
+    margin-left: 60px;
+    margin-right:50px;
+    margin-bottom:10px;    
+  }  
+}
+@media screen { 
+  #section_hero .section_hero_heading {
+    margin-bottom:35px;
+    text-align:center;
+  }
+}
+#section_hero .section_hero_heading_big {
+  font-weight: 400;
+  font-size:54px;
+  display:block;
+
+  @include large-up {
+    font-size:76px;
+    display:block;
+  }
+}
+#section_hero .section_hero_heading_small {
+  font-weight: 400;
+  font-size:38px;
+
+  @include large-up {
+    font-size:54px;
+  }
+}
+
+#section_hero .section_hero_more {
+  position:absolute;
+  left:50%;
+  transform:translateX(-50%);
+  bottom:0;
+  font-size:18px;
+  margin-bottom:10px;
+  background-color:rgba(0,0,0,.65);
+  border-radius: 12px;
+  padding:5px 8px 5px 15px;
+  display:flex;
+  align-items:center;
+  color: $white;
+  text-decoration: none;
+}
+#section_hero .section_hero_more::after {
+  margin-left:10px;
+  font-family: FontAwesome;
+  color:#000;
+  background-color:$white;
+  border-radius:50%;
+  content:'\f061';
+  font-size:18px;
+  line-height:26px;
+  text-align:center;
+  width:26px;
+  height:26px;
+  transition:transform .2s ease-in-out;
+}
+#section_hero .section_hero_more:hover::after {
+  transform:rotate(90deg)
+}
+#section_hero .section_hero_more:hover { 
+  opacity:1
+}
+
+
+
+    
+    

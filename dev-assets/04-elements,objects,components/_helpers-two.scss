@@ -1,0 +1,33 @@
+//   responsywność obrazków
+  img {
+    max-width: 100%;
+    vertical-align: middle;
+
+// reset stylów dla wszystkich elementów a
+  }
+  a {
+    text-decoration: none;
+  }
+
+// box sizing
+  * {
+    box-sizing: border-box;
+  }
+// line-heigt dla nagłówków h1-h3
+  h1,
+  h2,
+  h3 {
+    line-height: 1.1;
+  }
+// Nagłówek (nawigacja)
+  header {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background: $navbar;
+  }
+  header .navbar {
+    height: 50px;
+  }

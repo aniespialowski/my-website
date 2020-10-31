@@ -1,0 +1,27 @@
+// Font Family
+$font-family-one: 'Roboto', sans-serif;
+$font-family-two: 'Open Sans', sans-serif;
+
+// Nagłówki, akapity
+p {
+	margin: 0 0 15px;
+	line-height: 24px;
+  }
+  h2 {
+	font-size: 24px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 12px;
+	color: $white;
+	font-weight: 400;
+  }
+  h3 {
+	font-size: 16px;
+	margin-top: 0;
+	margin-left: 0;
+	margin-right: 0;
+	margin-bottom: 18px;
+	color: $white;
+	font-weight: 400;
+  }

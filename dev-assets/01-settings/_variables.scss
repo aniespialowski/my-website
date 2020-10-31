@@ -1,0 +1,23 @@
+//Kolory
+
+$black: #000;
+$navbar: #191919;
+$background-first-page: #35383f;
+$main-color: #43444D;
+$background-first-page-before: #5a5555;
+$border: #888;
+$portfolio: #d4d4d4;
+$white: #ffffff;
+$none: none;
+
+$accent: #00A693;
+$box-portfolio-background: fade($accent,85%);
+
+//Breakpoint
+$bp-small: '768px';
+$bp-medium: '992px';
+$bp-large: '1024px';
+
+// Siatka grid 
+$grid-base: 10px;
+$gutter: $grid-base * 2.5;

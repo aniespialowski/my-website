@@ -1,0 +1,54 @@
+// ukrywa menu główne
+#main-menu {
+    display: $none;
+    @include large-up {
+        display: block;
+    }
+}
+  .main-menu-content {
+    float: right;
+    margin-right: -40px;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .main-menu-content ul {
+    list-style-type: none;
+  }
+  .main-menu-content ul li {
+    float: left;
+    display: block;
+  }
+  .main-menu-content ul li a {
+    color: $white;
+    font-size: 15px;
+    font-family: $font-family-two;
+    font-weight: 400;
+    margin-right: 20px;
+    padding: 20px 14px;
+    line-height: 20px;
+    transition: all 0.2s ease-in-out;
+  }
+  .main-menu-content ul li a:hover {
+    color: $accent;
+  }
+  .main-menu-content ul li i {
+    font-size: 14px;
+  }
+
+  .slicknav_menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+    @include large-up{
+        display: none;
+    }
+  }
+
+  // menu mobilne
+  .slicknav_menu {
+    position: fixed;
+    left: 0;
+    right: 0;
+  }
+  

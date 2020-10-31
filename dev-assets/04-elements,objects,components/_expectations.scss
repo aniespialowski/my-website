@@ -1,0 +1,58 @@
+.expectations {
+	color: $main-color;
+	background-color: $white;
+	padding: 60px 0 0;
+	overflow: auto;
+	h2 {
+		color: $main-color;
+		padding-top: 20px;
+		font-size: 32px;
+	}
+	h3 {
+		color: $main-color;
+		padding: 0 0 10px;
+		font-size: 20px;
+    }
+}
+
+.expectations-content {
+	color: $main-color;
+	background-color: $white;
+	padding: 0 0 40px;
+	overflow: auto;
+	h2 {
+		color: $main-color;
+		padding-top: 20px;
+		font-size: 32px;
+	}
+	h3 {
+		color: $main-color;
+		padding: 0 0 10px;
+		font-size: 20px;
+    }
+    p {
+        margin-bottom: 30px;
+    }
+	.col {
+		margin-bottom: -30px;
+		text-align: center;
+		span {
+			display: inline-block;
+            width: 90px;
+            height: 90px;
+			background: $white;
+			text-align: center;
+			}
+			i {
+				color: $accent;
+				font-size: 60px;
+				line-height: 120px;
+            }
+            @include large-up {
+                p {
+                    text-align: center;
+                    padding: 0 15px;  
+                }
+            }  
+        }   
+    }       

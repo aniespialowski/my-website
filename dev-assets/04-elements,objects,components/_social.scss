@@ -1,0 +1,19 @@
+.social-links {
+    padding: 60px 0 0;
+    margin-top: 100px;
+    text-align: center;
+    overflow: auto;
+  }
+  .social-links span {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    i {
+        color: $white;
+        line-height: 75px;
+        font-size: 45px;
+        margin: 0 5px;  
+    }
+  }

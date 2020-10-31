@@ -1,0 +1,46 @@
+.skills {
+	color: $white;
+	background-color: $accent;
+	padding: 60px 0 40px;
+	overflow: auto;
+	h2 {
+		color: $white;
+		padding-top: 20px;
+		font-size: 32px;
+	}
+	h3 {
+		color: $white;
+		padding: 0 0 10px;
+		font-size: 20px;
+	}
+	.col {
+		margin-bottom: -30px;
+		text-align: center;
+		span {
+			display: inline-block;
+            width: 90px;
+            height: 90px;
+			background: $white;
+			text-align: center;
+			border-radius: 50%;
+			transition: all 0.2s ease-in-out;
+			&:hover {
+				background: $accent;
+			}
+			&:hover > i {
+				color: $white;
+			}
+			i {
+				color: $accent;
+				font-size: 60px;
+				line-height: 90px;
+            }
+            @include medium-up {
+                p {
+                    text-align: center;
+                    padding: 0 15px;  
+                }
+            }  
+        }   
+    }
+}   
