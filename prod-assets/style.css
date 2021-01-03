@@ -227,6 +227,9 @@ a img {
     margin-left: 60px;
     margin-right: 50px;
     margin-bottom: 10px; } }
+  @media screen and (min-width: 1380px) {
+    #section_hero .section_hero_image {
+      margin-left: 230px; } }
 
 @media screen {
   #section_hero .section_hero_heading {
@@ -239,15 +242,15 @@ a img {
   display: block; }
   @media (min-width: 1024px) {
     #section_hero .section_hero_heading_big {
-      font-size: 76px;
+      font-size: 79px;
       display: block; } }
 
 #section_hero .section_hero_heading_small {
   font-weight: 400;
-  font-size: 38px; }
+  font-size: 40px; }
   @media (min-width: 1024px) {
     #section_hero .section_hero_heading_small {
-      font-size: 54px; } }
+      font-size: 53px; } }
 
 #section_hero .section_hero_more {
   position: absolute;
@@ -256,8 +259,8 @@ a img {
   bottom: 0;
   font-size: 18px;
   margin-bottom: 10px;
-  background-color: rgba(0, 0, 0, 0.65);
-  border-radius: 12px;
+  background-color: rgba(0, 0, 0, 0.55);
+  border-radius: 20px;
   padding: 5px 8px 5px 15px;
   display: flex;
   align-items: center;
@@ -363,20 +366,20 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  background: #191919; }
+  background: transparent; }
 
 header .navbar {
-  height: 50px; }
+  height: 55px; }
 
 #main-menu {
   display: none; }
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     #main-menu {
       display: block; } }
 
 .main-menu-content {
   float: right;
-  margin-right: -40px;
+  margin-right: 20px;
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
@@ -393,8 +396,8 @@ header .navbar {
   font-size: 15px;
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
-  margin-right: 20px;
   padding: 20px 14px;
+  margin-right: 20px;
   line-height: 20px;
   transition: all 0.2s ease-in-out; }
 
@@ -408,7 +411,7 @@ header .navbar {
   position: fixed;
   left: 0;
   right: 0; }
-  @media (min-width: 1024px) {
+  @media (min-width: 992px) {
     .slicknav_menu {
       display: none; } }
 
@@ -783,12 +786,11 @@ footer {
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px;
-  border: 1px solid #43444D;
-  background-color: #191919; }
+  background-color: none; }
   .slicknav_btn:hover {
-    background-color: #1e1e1e; }
+    background-color: rgba(0, 0, 0, 0.5); }
   .slicknav_btn:focus {
-    background-color: #1e1e1e; }
+    background-color: rgba(0, 0, 0, 0.5); }
 
 /* Button Text */
 .slicknav_menu .slicknav_menutxt {
@@ -801,7 +803,7 @@ footer {
   background-color: #ffffff; }
 
 .slicknav_menu {
-  background: #191919; }
+  background: rgba(0, 0, 0, 0.5); }
 
 .slicknav_nav {
   color: #ffffff;

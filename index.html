@@ -28,7 +28,6 @@
         <!--nawigacja-->
     <header>
         <nav>
-            <div class="container">
                 <div class="navbar">
                     <div class="main-menu-content">
                         <ul id="main-menu">
@@ -44,7 +43,6 @@
                     <div id="attach-mobile-menu">
                     </div>
                 </div>
-            </div>
         </nav>
     </header>
         
@@ -66,7 +64,7 @@
                 <!-- <div id="about"> -->
                 <div class="container">
                     <h2>O mnie</h2>
-                    <p>Tematyka kodowania zainteresowała mnie stosunkowo niedawno - mniej więcej wtedy, gdy rozpocząłem współpracę z obecnym pracodawcą. Do moich codziennych obowiązków należało pozyskiwanie dla naszych partnerów biznesowych pracowników z różnych obszarów sektora IT. W toku poszukiwań od Testerów, przez Storage Engineerów, Big Data Developerów,<br> DevOps-ów, Java Developerów itd. trafiłem wreszcie na profil Frontend Developera - najpierw ze znajomością Angular później z React. Obszar pracy Frontend Developera tak mnie zainteresował, że rozpocząłem samodzielną naukę w tym obszarze. Poza forami dyskusyjnymi, artykułami oraz różnymi tutorialami w sieci - realizuję konsekwentnie kursy internetowe, które poszerzają oraz uporządkowują moją dotychczasową wiedzę. Za pomocą platform: <u>StrefaKursów.pl</u> oraz <u>Udemy</u> do tej pory zrealizowałem następujące kursy (łącznie ponad 70h):<br>
+                    <p>Tematyka kodowania zainteresowała mnie stosunkowo niedawno - mniej więcej wtedy, gdy rozpocząłem współpracę z obecnym pracodawcą. Do moich codziennych obowiązków należało pozyskiwanie dla naszych partnerów biznesowych pracowników z różnych obszarów sektora IT. W toku poszukiwań od Testerów, przez Storage Engineerów, Big Data Developerów,<br> DevOps-ów, Java Developerów itd. trafiłem wreszcie na profil Frontend Developera - najpierw ze znajomością Angular później z React. Obszar pracy Frontend Developera tak mnie zainteresował, że rozpocząłem samodzielną naukę w tym obszarze. Poza forami dyskusyjnymi, artykułami oraz różnymi tutorialami w sieci - realizuję konsekwentnie kursy internetowe, które poszerzają oraz uporządkowują moją dotychczasową wiedzę. Za pomocą platform: <u>StrefaKursów.pl</u> oraz <u>Udemy</u> do tej pory zrealizowałem następujące kursy (łącznie ponad 90h):<br>
                     <br>
                     <i>- Wprowadzenie do tworzenia stron internetowych</i><br>
                     <i>- Kurs HTML 5.1 - podstawy tworzenia stron</i><br>
@@ -75,6 +73,7 @@
                     <i>- Flexbox & Grid - responsywne layouty od podstaw</i><br>
                     <i>- Warsztaty tworzenia stron internetowych</i><br>
                     <i>- Kurs HTML i JavaScript - praktyczne projekty</i><br>
+                    <i>- Kurs Bootstrap 4</i><br>
                     <i>- The Web Developer Bootcamp 2020</i><br>
                     <br>
                     Obecnie szukam pracy, która umożliwi mi zdobycie pierwszego doświadczenia komercyjnego, aby w niedalekiej przyszłości zająć stanowisko Frontend Developera z React.js.</p>
@@ -131,11 +130,11 @@
                         </div>
                         <div class="col col--md50 col--lg25 skills" data-aos="fade-up" data-aos-duration="1000">
                             <div class="icon-box">
-                                <span class="icon-box__icon"><i class="fab fa-bootstrap"></i></span>
-                                <h3>Bootstrap 4</h3>
-                                <p class="icon-box__text">Bardzo popularny i przydatny framework CSS z wbudowaną siatką Grid. W trakcie nauki...</p>
+                            <span class="icon-box__icon"><i class="fab fa-bootstrap"></i></span>
+                            <h3>Bootstrap 4</h3>
+                            <p class="icon-box__text">Bardzo przydatny framework CSS z wbudowaną siatką Grid. Znacznie przyspiesza codzienną pracę</p>
                             </div>
-                            </div>
+                        </div>
                     </div>
                 </div>
         </section>      
@@ -200,6 +199,16 @@
                                     <h3>Player Video "Queen" (JavaScript)</h3>
                                     <p>październik 2020</p>
                                     <a href="http://niespialowski-portfolio.pl/video_player/index.html" class="portfolio-link"><i class="fa fa-rocket" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="portfolio-item">
+                            <img src="images/owl_slider/architektura.jpg" alt="">
+                            <div class="portfolio-hover">
+                                <div class="portfolio-hover-inner">
+                                    <h3>Projekt "Architektura" (Bootstrap 4 + Sass)</h3>
+                                    <p>grudzień 2020</p>
+                                    <a href="http://niespialowski-portfolio.pl/projekt-wnetrze/index.html" class="portfolio-link"><i class="fa fa-rocket" aria-hidden="true"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -269,11 +278,27 @@
     </main>
 
     <!-- Stopka -->
-    <footer>
-        Copyright &copy; 2020 Andrzej Nieśpiałowski
-    </footer>
+<footer>
+    Copyright &copy; 2020 Andrzej Nieśpiałowski
+</footer>
 
-    <script>AOS.init();</script>
+<script>AOS.init();</script>
+<script>
+    $(window).scroll(function () {
+        if ($(window).scrollTop() >= 200) {
+
+        $('.navbar').css('background','rgba(0,0,0,.5)');
+        } else {
+            $('.navbar').css('background','transparent');
+        } 
+    });
+
+        $(window).scroll(function() {
+        if ($(window).width()<= 992) {
+            $('.navbar').css('background','transparent');
+        }
+    });
+</script>
 </body>
 </html>
 
